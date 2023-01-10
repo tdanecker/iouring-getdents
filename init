@@ -1,0 +1,8 @@
+#!/bin/sh
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+#mount -t devtmpfs none /dev
+
+exec /bin/tini -r -- /usr/bin/hyperfine -N --prepare 'sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"' '/usr/local/bin/traverse /usr/local/src/linux' '/usr/local/bin/traverse-iouring /usr/local/src/linux' '/usr/bin/du -bs /usr/local/src/linux'
+#exec /bin/sh

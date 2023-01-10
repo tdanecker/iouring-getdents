@@ -1,0 +1,5 @@
+/.idea
+/target
+/linux
+/ramdisk
+/initrd.img*

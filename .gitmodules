@@ -1,0 +1,16 @@
+[submodule "tokio-uring"]
+	path = tokio-uring
+	url = git@github.com:tdanecker/tokio-uring.git
+	branch = getdents
+[submodule "linux"]
+	path = linux
+	url = git@github.com:tdanecker/linux.git
+	branch = iouring-getdents
+[submodule "tini"]
+	path = tini
+	url = git@github.com:tdanecker/tini.git
+	branch = reboot
+[submodule "io-uring"]
+	path = io-uring
+	url = git@github.com:tdanecker/io-uring.git
+	branch = getdents
